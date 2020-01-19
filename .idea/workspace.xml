@@ -1,21 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abb8ceaf-543f-4ce1-abed-f00301477b51" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Or Dekalo &lt;ordekalo@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\ordek\IdeaProjects\HW3\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1Wc3bPXPBDqdwCPtYlsYpnO3bAS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abb8ceaf-543f-4ce1-abed-f00301477b51" name="Default Changelist" comment="" />
+      <created>1579435126894</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579435126894</updated>
+      <workItem from="1579435130162" duration="255000" />
+    </task>
+    <task id="LOCAL‎00001" summary="initial commit">
+      <created>1579435383272</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1579435383272</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="698" y="257" key="git4idea.merge.GitPullDialog" timestamp="1579435340635">
+    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1579435387703">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="698" y="257" key="git4idea.merge.GitPullDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579435340635" />
+    <state x="393" y="8" key="CommitChangelistDialog2/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579435387703" />
+    <state x="629" y="337" key="Github.Dialog.Accounts.Choose" timestamp="1579435405212">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="629" y="337" key="Github.Dialog.Accounts.Choose/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579435405212" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1579435397937">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579435397937" />
+    <state x="698" y="257" key="git4idea.merge.GitPullDialog" timestamp="1579435518883">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="698" y="257" key="git4idea.merge.GitPullDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579435518883" />
   </component>
 </project>
