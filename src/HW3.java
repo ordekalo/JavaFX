@@ -15,7 +15,7 @@ import javafx.util.Duration;
 
 public class HW3 extends Application {
 
-    static int lastCount = 0;// Last tick count before clicked undo button
+    int lastCount = 0;// Last tick count before clicked undo button
     int count = 0; // Tick counter
     int interval = 1000; // Tick interval
     double lastLocation = 0; // Last location before clicked undo button
