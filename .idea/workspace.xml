@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abb8ceaf-543f-4ce1-abed-f00301477b51" name="Default Changelist" comment="" />
+    <list default="true" id="abb8ceaf-543f-4ce1-abed-f00301477b51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ordekalo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HW3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -31,11 +43,44 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HW3">
+    <configuration name="HW3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HW3" />
+      <module name="HW3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HW3" />
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -60,6 +105,9 @@
       <option name="presentableId" value="Default" />
       <updated>1579435126894</updated>
       <workItem from="1579435130162" duration="255000" />
+      <workItem from="1580298683232" duration="269000" />
+      <workItem from="1580750040539" duration="1658000" />
+      <workItem from="1580751714866" duration="1906000" />
     </task>
     <task id="LOCAL‎00001" summary="initial commit">
       <created>1579435383272</created>
@@ -78,6 +126,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2475" y="285" width="800" height="673" key="#Project_Structure" timestamp="1580298809068">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="285" width="800" height="673" key="#Project_Structure/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580298809068" />
+    <state x="2338" y="282" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580298948261">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state x="2338" y="282" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580298948261" />
+    <state x="2483" y="293" width="784" height="657" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1580298909337">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state x="2483" y="293" width="784" height="657" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580298909337" />
+    <state x="2684" y="529" width="308" height="212" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580750465741">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state x="2684" y="529" width="308" height="212" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580750465741" />
     <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1579435387703">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -86,13 +150,45 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="629" y="337" key="Github.Dialog.Accounts.Choose/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579435405212" />
+    <state width="1874" height="279" key="GridCell.Tab.0.bottom" timestamp="1580755141437">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="279" key="GridCell.Tab.0.bottom/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580755141437" />
+    <state width="1874" height="279" key="GridCell.Tab.0.center" timestamp="1580755141437">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="279" key="GridCell.Tab.0.center/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580755141437" />
+    <state width="1874" height="279" key="GridCell.Tab.0.left" timestamp="1580755141437">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="279" key="GridCell.Tab.0.left/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580755141437" />
+    <state width="1874" height="279" key="GridCell.Tab.0.right" timestamp="1580755141437">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="279" key="GridCell.Tab.0.right/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580755141437" />
+    <state x="2729" y="289" key="SettingsEditor" timestamp="1580750935398">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state x="2729" y="289" key="SettingsEditor/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580750935398" />
     <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1579435397937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="146" key="Vcs.Push.Dialog.v2/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579435397937" />
+    <state x="2567" y="484" width="542" height="303" key="cloudConfig.PluginsDialog" timestamp="1580751688214">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state x="2567" y="484" width="542" height="303" key="cloudConfig.PluginsDialog/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580751688214" />
+    <state x="2611" y="557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580750708292">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state x="2611" y="557" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580750708292" />
     <state x="698" y="257" key="git4idea.merge.GitPullDialog" timestamp="1579435518883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="698" y="257" key="git4idea.merge.GitPullDialog/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1579435518883" />
+    <state x="2379" y="372" width="1372" height="792" key="new project wizard" timestamp="1580750379574">
+      <screen x="1920" y="84" width="1920" height="1080" />
+    </state>
+    <state x="2379" y="372" width="1372" height="792" key="new project wizard/1920.84.1920.1080/0.111.1920.969@1920.84.1920.1080" timestamp="1580750379574" />
   </component>
 </project>
