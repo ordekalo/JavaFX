@@ -1,3 +1,9 @@
+/*
+  JAVAFX - HOMEWORK3
+
+  @author ordekalo
+ */
+
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
@@ -21,7 +27,7 @@ public class HW3 extends Application {
     double lastLocation = 0; // Last location before clicked undo button
     int lastInterval = 1000; // Last tick interval before clicked undo button
     boolean flag = false; // Flag to validate if redo button clicked
-    private BorderPane pane;
+    private BorderPane borderPane;
     private HBox hboxText;
     private Text txtCount, txtInterval;
     private String strCount = "tickCount: ", strInterval = "tickInterval: ";
@@ -33,7 +39,7 @@ public class HW3 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        pane = new BorderPane();
+        borderPane = new BorderPane();
 
         // create buttons and order it on Hbox
         Button btnUndo = new Button("Undo");
@@ -55,59 +61,18 @@ public class HW3 extends Application {
         hboxText.getChildren().add(txtInterval);
 
         // Add the hboxs to the main pane
-        pane.setTop(hboxButtons);
-        pane.setLeft(hboxText);
+        borderPane.setTop(hboxButtons);
+        borderPane.setLeft(hboxText);
 
         startAnimation();
 
-        hboxText.translateXProperty().addListener(e -> {
-            // check if redo button clicked
-            if (flag) {
-                // set the last value before clicking on undo button
-                count = lastCount;
-                interval = lastInterval;
-                flag = false;
-            } else {
-                // redo button not clicked -> normal inc  the count and interval
-                count++;
-                interval = 1000 + count;
-            }
-            // update texts value
-            txtCount.setText(strCount + count);
-            txtInterval.setText(strInterval + interval);
+        hboxText.translateXProperty().addListener(e -> clickListener());
 
-            //check if hbox of texts is not in the window
-            if (!inWindow(hboxText))
-                hboxText.setTranslateX(0);
-        });
+        // setting preferred button actions
+        btnUndo.setOnAction(e -> undoAction());
+        btnRedo.setOnAction(e -> redoAction());
 
-        btnUndo.setOnAction(e -> {
-            // save last location and values
-            lastLocation = hboxText.getTranslateX();
-            lastCount = count;
-            lastInterval = interval;
-            //reset all values and location
-            count = -1; // actual value displayed is 0
-            interval = 999; // actual value displayed is 1000
-            txtCount.setText(strCount + count);
-            txtInterval.setText(strInterval + interval);
-
-            hboxText.setTranslateX(0);
-
-
-        });
-
-        btnRedo.setOnAction(e -> {
-            // set all value and location before click on undo button
-            hboxText.setTranslateX(lastLocation);
-            count = lastCount;
-            interval = lastInterval;
-            txtCount.setText(strCount + lastCount);
-            txtInterval.setText(strInterval + lastInterval);
-            flag = true;
-        });
-
-        Scene scene = new Scene(pane, 600, 200);
+        Scene scene = new Scene(borderPane, 600, 200);
         primaryStage.setScene(scene);
         primaryStage.centerOnScreen();
         primaryStage.setAlwaysOnTop(true);
@@ -117,14 +82,58 @@ public class HW3 extends Application {
 
     }
 
+    public void clickListener() {
+        // check if redo button clicked
+        if (flag) {
+            // set the last value before clicking on undo button
+            count = lastCount;
+            interval = lastInterval;
+            flag = false;
+        } else {
+            // redo button not clicked -> normal inc  the count and interval
+            count++;
+            interval = 1000 + count;
+        }
+        // update texts value
+        txtCount.setText(strCount + count);
+        txtInterval.setText(strInterval + interval);
+        //check if hbox of texts is not in the window bound
+        if (!inBound(hboxText))
+            hboxText.setTranslateX(0);
+    }
+
+    public void redoAction() {
+        // set all value and location before click on undo button
+        hboxText.setTranslateX(lastLocation - 1);
+        count = lastCount;
+        interval = lastInterval;
+        txtCount.setText(strCount + lastCount);
+        txtInterval.setText(strInterval + lastInterval);
+        flag = true;
+    }
+
+    public void undoAction() {
+        // save last location and values
+        lastLocation = hboxText.getTranslateX();
+        lastCount = count;
+        lastInterval = interval;
+        //reset all values and location
+        count = -1; // actual value displayed is 0
+        interval = 999; // actual value displayed is 1000
+        txtCount.setText(strCount + count);
+        txtInterval.setText(strInterval + interval);
+
+        hboxText.setTranslateX(0);
+    }
+
     /**
-     * function take hbox and check if it in the window
+     * function take hbox and check if it in the window bounds
      *
      * @param hbox H-box
-     * @return true if the hbox still in the window else false
+     * @return true if the hbox still in bounds else false
      */
-    public boolean inWindow(HBox hbox) {
-        return hbox.getBoundsInParent().intersects(pane.getLayoutBounds()) || pane.getLayoutBounds().contains(hbox.getBoundsInParent());
+    public boolean inBound(HBox hbox) {
+        return hbox.getBoundsInParent().intersects(borderPane.getLayoutBounds()) || borderPane.getLayoutBounds().contains(hbox.getBoundsInParent());
     }
 
     /**
@@ -132,18 +141,17 @@ public class HW3 extends Application {
      * when click double click on mouse or press s/S key
      */
     public void startAnimation() {
-        KeyFrame kf = new KeyFrame(Duration.millis(1000), e -> hboxText.setTranslateX(hboxText.getTranslateX() + 10));
+        KeyFrame kf = new KeyFrame(Duration.seconds(1), e -> hboxText.setTranslateX(hboxText.getTranslateX() + 10));
         Timeline timeline = new Timeline(kf);
         timeline.setCycleCount(Timeline.INDEFINITE);
-
         //double clicked
-        pane.setOnMouseClicked(e -> {
+        borderPane.setOnMouseClicked(e -> {
             if (e.getClickCount() == 2)
                 timeline.play(); // start animation
         });
 
         //S/s pressed
-        pane.setOnKeyPressed(e -> {
+        borderPane.setOnKeyPressed(e -> {
             if (e.getCode() == KeyCode.S)
                 timeline.play(); // start animation
         });
