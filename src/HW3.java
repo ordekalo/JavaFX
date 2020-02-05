@@ -99,7 +99,7 @@ public class HW3 extends Application {
         txtInterval.setText(strInterval + interval);
         //check if hbox of texts is not in the window bound
         if (!inBound(hboxText))
-            hboxText.setTranslateX(0);
+            hboxText.setTranslateX(-hboxText.getWidth());
     }
 
     public void redoAction() {
